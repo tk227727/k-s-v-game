@@ -58,7 +58,22 @@ Join Room
 Not Connected
 </div>
 <script type="module">
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAw3AVi8M7Agv6pTyfoPxX8-MdvAEyCa8c",
+  authDomain: "k-s-v-game.firebaseapp.com",
+  projectId: "k-s-v-game",
+  storageBucket: "k-s-v-game.firebasestorage.app",
+  messagingSenderId: "297006533574",
+  appId: "1:297006533574:web:0ead138ad4b6a78e22c0c7"
+};
+
+initializeApp(firebaseConfig);
+
+document.getElementById("status").textContent =
+"Firebase Ready";
 document.getElementById("status").textContent =
 "Module OK";
 
