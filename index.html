@@ -75,6 +75,15 @@ initializeApp(firebaseConfig);
 
 document.getElementById("status").textContent =
 "Firebase Ready";
+	document.getElementById(“createBtn”).onclick = () => {
+
+const roomId =
+Math.floor(1000 + Math.random() * 9000);
+
+document.getElementById(“status”).textContent =
+“Room: “ + roomId;
+
+};
 
 </script>
 	
